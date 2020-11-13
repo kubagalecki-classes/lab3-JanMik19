@@ -39,3 +39,15 @@ void id(const Figura& obj) // zadanie 9
 {
     obj.id();
 }
+
+int main()
+{
+    //Figura f(0);
+    Kwadrat kw(5);
+    kw.id();
+    
+    //Figura* f = new Kwadrat{ 2 }; // nie mozna rzutowac
+    //f->id();
+    //delete f;
+    return 0;
+}
