@@ -5,10 +5,10 @@
 unsigned int transportujFlota(unsigned int towar)
 {
   unsigned int licznik = 0; // licznik na początku
-	int l_zaglowiec = 0; // liczba żaglowców
-	Stocznia stocznia{};
+	unsigned int l_zaglowiec = 0; // liczba żaglowców
+  Stocznia stocznia{};
 
-	while(licznik<towar)
+	while(licznik < towar)
 	{
 		Statek* s1 = stocznia(); // tworzy nowy objekt
 		licznik += s1->transportuj(); // dodawanie towaru do licznika z funkcji transportuj()
@@ -18,5 +18,6 @@ unsigned int transportujFlota(unsigned int towar)
 		
 	delete s1; // zwalnianie pamięci
 	}
+  
 return l_zaglowiec; // zwrot liczby żaglowców
 }
